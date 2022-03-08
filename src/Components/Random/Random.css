@@ -1,0 +1,19 @@
+.buttons-div{
+    margin-top: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.buttons-div button{
+    margin-left: 1rem;
+    width: 6rem;
+    background-color: #D82148;
+    color: #fff;
+    border: 1px solid #D82148;
+    border-radius: 2px;
+    padding: .4rem;
+    font-size: large;
+}

@@ -1,0 +1,38 @@
+.aboutDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 40rem;
+    padding: 2rem;
+    
+}
+.aboutDetail div:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: flex-start;
+    margin-left: 2rem;
+
+}
+.aboutDetail div:nth-child(2){
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 20rem;
+  text-align: left;
+    
+    font-size: 1.2rem;
+    margin-left: auto;
+
+}
+
+@media screen and (max-width: 520px) {
+    .aboutDetail{
+        width: 23rem;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    .aboutDetail div:nth-child(2){
+        width: 10rem;
+    }
+}

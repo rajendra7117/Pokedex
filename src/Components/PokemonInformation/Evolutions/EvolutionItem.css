@@ -1,0 +1,56 @@
+.pokemon-evolution-card{
+    width: 20rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none !important;
+}
+.pokemon-evolution-card img{
+    width: 270px;
+    height: 220px;
+    border: 4px solid #000;
+    border-radius: 50% !important;
+    
+    
+}
+.pokemon-evolution-card button{
+    width: 7rem;
+    padding: .3rem;
+    background-color: #019267;
+    color: #fff;
+    border: 1px solid #019267;
+    border-radius: 2px;
+}
+
+.grass{
+    background-color: #019267;
+}
+.ground{
+background-color: #7C9473;
+}
+.ghost{
+background-color: #222831;
+}
+.fire{
+background-color: #F07B3F !important;
+}
+.electric{
+    background-color: #FFCD3C;
+}
+.bug{
+    background-color: #9DAD7F;
+}
+.water{
+background-color: #1C658C;
+}
+.normal{
+    background-color: #BAC7A7;
+}
+@media screen and (max-width:1000px) {
+    .pokemon-evolution-card{
+        margin-inline: auto;
+    }
+}

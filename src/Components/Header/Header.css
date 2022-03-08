@@ -1,0 +1,27 @@
+.header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 5rem;
+}
+.header .brand{
+    color: #21325E;
+}
+.header .nav-items{
+    display: flex;
+    flex-direction: row;
+}
+.header .nav-items a{
+    color: #21325E;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.header img{
+    width: 55px;
+    height: 45px;
+}

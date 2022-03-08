@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Switch, Route} from 'react-router-dom'
+import Header from './Components/Header/Header';
+import RandomPage from './Components/Routes/RandomPage';
+import PokemonInfoPage from './Components/Routes/PokemonInfoPage';
+import Search from './Components/Search/Search';
+import PageNotFound from './Components/GeneralComponets/PageNotFound';
+
+import {useLocation} from 'react-router-dom'
 function App() {
+  const location = useLocation()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+     
+    <Switch >
+      <Route path='/' exact>
+          <RandomPage />
+        </Route>
+        <Route path='/info/:pokemon' >
+          <PokemonInfoPage />
+        </Route>
+        <Route path="/search" exact>
+            <Search />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+
+    </Switch>
+
+  
     </div>
   );
 }

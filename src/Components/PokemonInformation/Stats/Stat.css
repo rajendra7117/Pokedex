@@ -1,0 +1,50 @@
+.stat{
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    
+    align-items: center;
+    padding: 1rem;
+}
+.stat div h4{
+    text-align: left;
+}
+.stat div:nth-child(2){
+    text-align: left;
+}
+.progress{
+    padding: 0;
+    margin-left: 2rem;
+}
+.stat div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .stat{
+        width: 40rem;
+        
+    }
+    .stat div:nth-child(1){
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .stat{
+        width: 22rem;
+    }
+    .stat div h4{
+        width: auto;
+        font-size: small;
+    }
+    .stat div:nth-child(2){
+        font-size: medium;
+    }
+}

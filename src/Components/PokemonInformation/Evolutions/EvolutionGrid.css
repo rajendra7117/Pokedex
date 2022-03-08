@@ -1,0 +1,20 @@
+.evolution-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .evolution-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen  and (max-width: 520px){
+    .evolution-grid{
+        padding: .2rem;
+    }
+}

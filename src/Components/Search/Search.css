@@ -1,0 +1,44 @@
+.search-container{
+padding: 1rem;
+margin-top: 1rem;
+}
+.search-container div{
+    margin-bottom: 2rem;
+}
+.search-container div h4{
+    color: rgb(18, 18, 90);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.search-container input{
+    width: 20rem;
+    padding: .4rem;
+    font-size: medium;
+    border: 1px solid rgb(212, 73, 73);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    outline: none;
+}
+
+.search-container div button{
+    background-color: rgb(212, 73, 73);
+    border: 1px solid rgb(212, 73, 73);
+    padding: .4rem;
+    font-size: medium;
+    color: #fff;
+}
+.search-card{
+    margin: 7rem auto;
+    width: 22rem !important;
+    height: 27rem;
+    
+}
+.search-card div{
+    height: 25rem !important;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 520px) {
+    .search-container input{
+        width: auto;
+    }
+}
